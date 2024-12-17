@@ -1,5 +1,7 @@
-.songlist {
-
+.songlistMalayalam {
+    font-family:'helveticaneue-light';
+    padding-left:50px;
+    font-size:14pt
 }
 
 .langHead {
