@@ -1,3 +1,68 @@
-<html>
+<html lang="en" class="notranslate" translate="no">
+    <head>
+            <meta name="google" content="notranslate" />
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
 
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+            <link rel="stylesheet" href="styles/mainpage.css">
+            
+
+            <title>പാലൊളി തൂകിയ പാതിരാ നേരത്ത്</title>
+    </head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <nav class="nav nav-pills nav-justified lyricHead">
+            <a class="nav-item nav-link" href="../index.html">Back</a>
+        </nav>
+
+        <div class="lyricview">
+
+
+            <br>
+            രാജരാജനേശുരാജൻ ഇന്നീരാവതിൽ <br>
+            ലോകത്തിന്റെ രക്ഷക്കായി ജാതം ചെയ്തല്ലോ <br>
+            ദേവദേവ പൈതലിനെ കണ്ടുവണങ്ങാൻ <br>
+            ആട്ടിടയർ കൂട്ടമായി യാത്രയായല്ലോ<br>
+            <br>
+            ദൈവദൂതന്മാർ ഒന്നിച്ചു പാടി ഉന്നതങ്ങളിൽ ദൈവമഹത്വം (2)<br>
+            <br>
+            സ്വർഗ്ഗഭവനം പരിത്യജിച്ച് കാലിക്കൂട്ടിൽ വന്നു പിറന്നു <br>
+            ആദാമിന്റെ പാപം പോക്കിടാനായി <br>
+            ദൈവപുത്രൻ മർത്യനായല്ലോ(2) <br>
+            <br>
+            (ദൈവദൂതന്മാർ ഒന്നിച്ചു പാടി ...)<br>
+            <br>
+            അഗ്നിരഥത്തിൽ അധിവസിക്കും <br>
+            മാലാഖമാരുടെ അധിപൻ <br>
+            ശിശുവിനെപ്പോൽ കന്യകതന്റെ <br>
+            മടിത്തട്ടിൽ ഉറങ്ങിയല്ലോ (2) <br>
+            <br>
+            (ദൈവദൂതന്മാർ ഒന്നിച്ചു പാടി ...)<br>
+            <br>
+            <br>
+            <br>
+            Tune : കര്‍ത്താവിന്‍ വരവില്‍ നമ്മെ എടുത്തിടുമ്പോള്‍
+            <br>
+            <br>
+            <br>
+            <br>
+            reference
+            <a href="https://youtu.be/uWYPMAzFhhk?si=8IRNllTNSF6MyBUd" target="_blank">https://youtu.be/uWYPMAzFhhk?si=8IRNllTNSF6MyBUd</a>
+
+        </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
