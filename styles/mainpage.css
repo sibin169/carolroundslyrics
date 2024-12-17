@@ -10,9 +10,17 @@
 .langHead {
  margin: 10px;
  padding: 10px;
- visibility: hidden;
+ /* visibility: hidden; */
 }
 
 .langHead a {
     font-family:'helveticaneue-light'
 }
+
+.lyricview {
+    /* width:800px; */
+    padding-left:50px;
+    font-size:14pt;
+    font-family:'helveticaneue-light';
+}
+
