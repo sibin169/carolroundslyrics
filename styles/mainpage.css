@@ -3,6 +3,18 @@
 
 }
 
+
+.songlistMalayalam ol{
+    padding-inline-start: 10px;
+    margin-top: 20PX;
+}
+
+.songlistMalayalam li {
+    padding: 7px 0px 7px 10px;
+    margin: 9px 0px;;
+
+}
+
 .songlistmain {
     font-family:'helveticaneue-light';
 }
@@ -10,7 +22,7 @@
 .langHead {
  margin: 10px;
  padding: 10px;
- /* visibility: hidden; */
+ visibility: hidden;
 }
 
 .langHead a {
