@@ -43,5 +43,13 @@ lyricHead {
     padding-left:50px;
     font-size:14pt;
     font-family:'helveticaneue-light';
+
+    background: #fffbe6;
+    /* font-family: 'georgia', serif; */
+    border: 1px solid #dcd2a3;
+    padding: 20px 40px;
+    width: 95%;
+    line-height: 1.6;
+    border-radius: 8px;
 }
 
