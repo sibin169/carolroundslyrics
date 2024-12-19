@@ -42,7 +42,11 @@ body {
 	margin-bottom: 1rem;
 }
 
-.songlistMalayalam li:not(:last-child) {
+/* .songlistMalayalam li:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+} */
+
+.songlistMalayalam li {
 	border-bottom: 1px solid lightblue;
 }
 
