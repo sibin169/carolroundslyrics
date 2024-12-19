@@ -25,7 +25,7 @@ jobs:
           export TZ="Asia/Kolkata"
 
           # Get the current date and time
-          current_datetime=$(date '+%B %d, %Y, %I:%M %p')
+          current_datetime=$(date '+%B %d, %Y, %I:%M:%S %p')
 
           # Update the placeholder in e-index.html if it exists, otherwise insert the timestamp
           if grep -q "<!-- LAST_UPDATED: {TIMESTAMP} -->" e-index.html; then
