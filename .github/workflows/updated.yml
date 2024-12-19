@@ -27,40 +27,18 @@ jobs:
           # Get the current date and time
           current_datetime=$(date '+%B %d, %Y, %I:%M:%S %p')
 
-          # Update the placeholder in e-index.html if it exists, otherwise insert the timestamp
-          if grep -q "<!-- LAST_UPDATED: {TIMESTAMP} -->" e-index.html; then
-            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" e-index.html
-          else
-            # If placeholder is not found, insert it at the beginning or where appropriate
-            sed -i "1s/^/<!-- LAST_UPDATED: $current_datetime -->\n/" e-index.html
-          fi
 
-          # Update the placeholder in e-index.html if it exists, otherwise insert the timestamp
-          if grep -q "<!-- LAST_UPDATED: {TIMESTAMP} -->" e-index.html; then
-            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" e-index.html
-          else
-          # If placeholder is not found, insert it at the beginning or where appropriate
-            sed -i "1s/^/<!-- LAST_UPDATED: $current_datetime -->\n/" e-index.html
-          fi
 
-          # Update the placeholder in all .html files inside the Songs folder if it exists
-          find "Songs" -type f -name "*.html" | while read -r file; do
-          if grep -q "<!-- LAST_UPDATED: {TIMESTAMP} -->" "$file"; then
-            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
-          else
-            # If placeholder is not found, insert it at the beginning or where appropriate
-            sed -i "1s/^/<!-- LAST_UPDATED: $current_datetime -->\n/" "$file"
-          fi
-          done
+        
 
       # Step 3: Commit and push changes (if any)
       - name: Commit and push changes
         run: |
-          git config --local user.name "github-actions"
-          git config --local user.email "github-actions@users.noreply.github.com"
-          git add . 
-          git commit -m "Update last updated timestamp in e-index.html and Songs folder"
-          git push
+          # git config --local user.name "github-actions"
+          # git config --local user.email "github-actions@users.noreply.github.com"
+          # git add . 
+          # git commit -m "Update last updated timestamp in e-index.html and Songs folder"
+          # git push
 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
