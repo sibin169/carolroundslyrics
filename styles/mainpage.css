@@ -34,9 +34,14 @@ body {
     font-family:'helveticaneue-light'
 }
 
-lyricHead {
+footer {
+    font-size: 12px;     
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
 
 }
+
 
 .lyricview {
     /* width:800px; */
