@@ -20,11 +20,21 @@ jobs:
       # Step 2: Update the "Last Updated" placeholder
       - name: Update Last Updated Timestamp
         run: |
-          # Get the current date and time in the desired format
+          # Get the current date and time
           current_datetime=$(date '+%B %d, %Y, %I:%M %p')
-          
-          # Replace the placeholder in the HTML file with the current date/time
-          sed -i "s/<!-- LAST_UPDATED_PLACEHOLDER -->/$current_datetime/" path/to/your/index.html
+
+          # List of specific files to update
+          files=(
+            "../e-index.html"
+            "path/to/file2.html"
+            "path/to/file3.html"
+          )
+
+          # Loop through each file and update the placeholder
+          for file in "${files[@]}"; do
+            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
+          done
+
 
       # Step 3: Commit and push changes (if any)
       - name: Commit and push changes
