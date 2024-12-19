@@ -27,22 +27,22 @@ jobs:
           sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" e-index.html
 
           # Update the placeholder in index.html.html
-          sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" index.html
+          #sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" index.html
 
           # Update the placeholder in all .html files inside the Songs folder
-          find "SongsMalalam" -type f -name "*.html" | while read -r file; do
-            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
-          done
+          #find "SongsMalalam" -type f -name "*.html" | while read -r file; do
+            #sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
+          #done
 
-          find "SongsEnglish" -type f -name "*.html" | while read -r file; do
-            sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
-          done
+          #find "SongsEnglish" -type f -name "*.html" | while read -r file; do
+            #sed -i "s/<!-- LAST_UPDATED: {TIMESTAMP} -->/<!-- LAST_UPDATED: $current_datetime -->/" "$file"
+          #done
 
       # Step 3: Commit and push changes (if any)
       - name: Commit and push changes
         run: |
           git config --local user.name "github-actions"
           git config --local user.email "github-actions@users.noreply.github.com"
-          git add path/to/your/index.html
-          git commit -m "Update last updated timestamp"
+          git add e-index.html 
+          git commit -m "Update last updated timestamp in e-index.html and Songs folder"
           git push
