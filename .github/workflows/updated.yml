@@ -46,3 +46,6 @@ jobs:
           git add e-index.html 
           git commit -m "Update last updated timestamp in e-index.html and Songs folder"
           git push
+
+        env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
