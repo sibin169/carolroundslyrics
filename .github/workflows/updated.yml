@@ -1,0 +1,36 @@
+name: Update Last Updated Timestamp
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull request to the main branch
+
+jobs:
+  update-last-updated:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Update the "Last Updated" placeholder
+      - name: Update Last Updated Timestamp
+        run: |
+          # Get the current date and time in the desired format
+          current_datetime=$(date '+%B %d, %Y, %I:%M %p')
+          
+          # Replace the placeholder in the HTML file with the current date/time
+          sed -i "s/<!-- LAST_UPDATED_PLACEHOLDER -->/$current_datetime/" path/to/your/index.html
+
+      # Step 3: Commit and push changes (if any)
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@users.noreply.github.com"
+          git add path/to/your/index.html
+          git commit -m "Update last updated timestamp"
+          git push
