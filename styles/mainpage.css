@@ -8,15 +8,16 @@ body {
 
     background: white;
 	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
-    padding: 15px;
+    padding: 15px 0px;
 	margin: 0;
-	border-radius: 0.1rem;
+	border-radius: 8px;
+    border: 1px solid #e0e0e0;
 
 }
 
 
 .songlistMalayalam ol{
-    padding-inline-start: 10px;
+    padding-inline-start: 0px;
     margin-top: 20PX;
 
 
@@ -110,13 +111,14 @@ footer {
     font-size:14pt;
     font-family:'helveticaneue-light';
 
-    background: #fffbe6;
+    background: #ffffff;
     /* font-family: 'georgia', serif; */
-    border: 1px solid #dcd2a3;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     padding: 15px 25px;
 
     line-height: 1.6;
-    border-radius: 8px;
+    
 
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
