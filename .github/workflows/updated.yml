@@ -3,10 +3,10 @@ name: Update Last Updated Timestamp
 on:
   push:
     branches:
-      - main  # Trigger on push to the main branch
+      - FirstRelease  # Trigger on push to the main branch
   pull_request:
     branches:
-      - main  # Trigger on pull request to the main branch
+      - FirstRelease  # Trigger on pull request to the main branch
 
 jobs:
   update-last-updated:
