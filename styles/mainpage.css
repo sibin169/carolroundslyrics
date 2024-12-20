@@ -127,6 +127,7 @@ footer {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+
 .add-to-home-popup {
     position: fixed;
     bottom: 20px;
@@ -139,6 +140,7 @@ footer {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: none;
     text-align: center;
+    font-family: Arial, sans-serif;
 }
 .add-to-home-popup button {
     margin-top: 10px;
@@ -151,11 +153,4 @@ footer {
 }
 .add-to-home-popup button:hover {
     background: #0056b3;
-}
-
-.fa-share {
-    color: #007bff;
-    font-size: 20px;
-    vertical-align: middle;
-    margin: 0 5px;
 }

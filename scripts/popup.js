@@ -1,24 +1,31 @@
-function closePopup() {
-    document.getElementById('addToHomePopup').style.display = 'none';
-  }
+function getDeviceType() {
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-  function showAddToHomePopup() {
+  if (/android/i.test(userAgent)) {
+    return 'android';
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return 'ios';
+  }
+  return 'unsupported';
+}
+
+function triggerAddToHome() {
+  const deviceType = getDeviceType();
+
+  if (deviceType === 'ios') {
+    alert('On iOS, tap the share button and select "Add to Home Screen."');
+  } else if (deviceType === 'android') {
+    alert('On Android, open the browser menu and select "Add to Home Screen."');
+  }
+}
+
+function showPopup() {
+  const deviceType = getDeviceType();
+  if (deviceType === 'ios' || deviceType === 'android') {
     const popup = document.getElementById('addToHomePopup');
-    const popupText = document.getElementById('popupText');
-
-    // Detect iOS
-    const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent) && !window.MSStream;
-    // Detect Android
-    const isAndroid = /Android/.test(navigator.userAgent);
-
-    if (isIOS) {
-      popupText.innerHTML = 'To add this page to your home screen, tap <i class="fas fa-share"></i> and then <b>"Add to Home Screen"</b>.';
-      popup.style.display = 'block';
-    } else if (isAndroid) {
-      popupText.innerHTML = 'To add this page to your home screen, tap the browser menu and select <b>"Add to Home Screen"</b>.';
-      popup.style.display = 'block';
-    }
+    popup.style.display = 'block';
   }
+}
 
-  // Show popup after a delay (2 seconds here)
-  setTimeout(showAddToHomePopup, 2000);
+// Show the popup only for supported devices after a delay (2 seconds here)
+setTimeout(showPopup, 2000);
