@@ -152,3 +152,10 @@ footer {
 .add-to-home-popup button:hover {
     background: #0056b3;
 }
+
+.fa-share {
+    color: #007bff;
+    font-size: 20px;
+    vertical-align: middle;
+    margin: 0 5px;
+}
