@@ -1,0 +1,156 @@
+body {
+    /* background-image: url("../img/bg-1.jpg"); */
+    background-color: #ffffff;
+  }
+
+.songlistMalayalam {
+    font-family:'helveticaneue-light';
+
+    background: white;
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.15);
+    padding: 15px 0px;
+	margin: 0;
+	border-radius: 8px;
+    border: 1px solid #e0e0e0;
+
+}
+
+
+.songlistMalayalam ol{
+    padding-inline-start: 0px;
+    margin-top: 20PX;
+
+
+    list-style-position: inside;
+	
+
+}
+
+.songlistMalayalam li {
+    padding: 7px 0px 7px 0px;
+    margin: 9px 0px;;
+
+    padding: 0 0 0 1rem;
+
+}
+
+.songlistMalayalam li:first-child {
+	margin-top: 1rem;
+}
+
+.songlistMalayalam li:last-child {
+	margin-bottom: 1rem;
+}
+
+/* .songlistMalayalam li:not(:last-child) {
+	border-bottom: 1px solid lightblue;
+} */
+
+.songlistMalayalam li {
+	border-bottom: 1px solid lightblue;
+}
+
+.songlistmain {
+    font-family:'helveticaneue-light';
+}
+
+.langHead {
+ margin: 10px;
+ padding: 10px;
+ /* visibility: hidden; */
+}
+
+.langHead a {
+    font-family:'helveticaneue-light'
+}
+
+.lyricHead {
+
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    /* display: inline-flex; */
+
+    font-family: "JetBrains Mono", monospace;
+    /* height: 48px; */
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+
+    margin: 10px 0px;
+
+}
+
+footer {
+    font-size: 12px;     
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+
+}
+
+
+.lyricview {
+    /* width:800px; */
+    padding-left:50px;
+    font-size:14pt;
+    font-family:'helveticaneue-light';
+
+    background: #ffffff;
+    /* font-family: 'georgia', serif; */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px 25px;
+
+    line-height: 1.6;
+    
+
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.add-to-home-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+.add-to-home-popup button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add-to-home-popup button:hover {
+    background: #0056b3;
+}
